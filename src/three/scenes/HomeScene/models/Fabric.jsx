@@ -22,7 +22,7 @@ export default function Fabric() {
   }, [])
 
   return (
-    <mesh castShadow geometry={geometry} position={[-0.72, 2.0, 0.82]} rotation={[-0.48, 0.02, -0.05]}>
+    <mesh castShadow geometry={geometry} position={[-0.9, 2.34, 0.82]} rotation={[-0.48, 0.02, -0.05]}>
       <meshStandardMaterial {...clayMaterialProps.fabric} side={DoubleSide} />
     </mesh>
   )
