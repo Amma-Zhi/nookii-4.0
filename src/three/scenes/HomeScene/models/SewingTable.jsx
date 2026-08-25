@@ -7,7 +7,7 @@ function TableLeg({ position, rotationZ = 0 }) {
     <RoundedBox
       castShadow
       receiveShadow
-      args={[0.28, 2.1, 0.3]}
+      args={[0.28, 2.42, 0.3]}
       radius={0.12}
       smoothness={5}
       position={position}
@@ -29,19 +29,19 @@ export default function SewingTable() {
         args={[5.3, 0.28, 1.65]}
         radius={0.16}
         smoothness={7}
-        position={[0, 2.18, 0]}
+        position={[0, 2.56, 0]}
       >
         <meshStandardMaterial {...clayMaterialProps.primary} />
       </RoundedBox>
 
-      <RoundedBox castShadow args={[4.7, 0.34, 1.18]} radius={0.1} smoothness={5} position={[0, 1.9, -0.05]}>
+      <RoundedBox castShadow args={[4.7, 0.34, 1.18]} radius={0.1} smoothness={5} position={[0, 2.28, -0.05]}>
         <meshStandardMaterial {...clayMaterialProps.secondary} />
       </RoundedBox>
 
-      <TableLeg position={[-2.18, 1.02, 0.54]} rotationZ={0.055} />
-      <TableLeg position={[2.18, 1.02, 0.54]} rotationZ={-0.055} />
-      <TableLeg position={[-2.18, 1.02, -0.54]} rotationZ={0.035} />
-      <TableLeg position={[2.18, 1.02, -0.54]} rotationZ={-0.035} />
+      <TableLeg position={[-2.18, 1.205, 0.54]} rotationZ={0.055} />
+      <TableLeg position={[2.18, 1.205, 0.54]} rotationZ={-0.055} />
+      <TableLeg position={[-2.18, 1.205, -0.54]} rotationZ={0.035} />
+      <TableLeg position={[2.18, 1.205, -0.54]} rotationZ={-0.035} />
     </group>
   )
 }
