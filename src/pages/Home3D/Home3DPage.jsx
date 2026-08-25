@@ -10,7 +10,7 @@ export default function Home3DPage() {
       <Canvas
         shadows
         dpr={[1, 2]}
-        camera={{ position: [0, 4.9, 17.3], fov: 30, near: 0.1, far: 100 }}
+        camera={{ position: [0, 5.4, 16.7], fov: 30, near: 0.1, far: 100 }}
         gl={{ antialias: true, alpha: false, powerPreference: 'high-performance' }}
         onCreated={({ gl }) => {
           gl.outputColorSpace = SRGBColorSpace
