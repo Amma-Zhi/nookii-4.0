@@ -45,3 +45,21 @@ canvas {
   height: 100%;
   outline: none;
 }
+
+/* Development-only composition comparison. Enable with ?compare=1. */
+.composition-reference {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  pointer-events: none;
+  display: grid;
+  place-items: center;
+  opacity: 0.34;
+  mix-blend-mode: multiply;
+}
+
+.composition-reference img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
