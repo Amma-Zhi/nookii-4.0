@@ -20,16 +20,6 @@ function ShelfModule({ position, width = 1.55, height = 0.92, depth = 0.7 }) {
       <RoundedBox {...common} args={[t, height - t * 1.2, depth]} position={[width / 2 - t / 2, 0, 0]}>
         <meshStandardMaterial {...clayMaterialProps.primary} />
       </RoundedBox>
-      <RoundedBox
-        castShadow
-        receiveShadow
-        args={[width - t * 1.1, height - t * 1.1, 0.06]}
-        radius={0.06}
-        smoothness={4}
-        position={[0, 0, -depth / 2 + 0.035]}
-      >
-        <meshStandardMaterial {...clayMaterialProps.secondary} />
-      </RoundedBox>
     </group>
   )
 }
