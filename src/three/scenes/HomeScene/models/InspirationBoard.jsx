@@ -24,7 +24,7 @@ export default function InspirationBoard({ onFocus }) {
       onPointerOver={() => { document.body.style.cursor = 'pointer' }}
       onPointerOut={() => { document.body.style.cursor = 'default' }}
     >
-      <RoundedBox castShadow receiveShadow args={[3.15, 3.0, 0.16]} radius={0.18} smoothness={8}>
+      <RoundedBox castShadow receiveShadow args={[3.15, 3.45, 0.16]} radius={0.18} smoothness={8}>
         <meshStandardMaterial {...clayMaterialProps.secondary} roughness={0.92} />
       </RoundedBox>
 
