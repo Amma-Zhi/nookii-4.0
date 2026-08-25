@@ -24,7 +24,7 @@ export default function Home3DPage() {
 
       {compareWithReference && (
         <div className="composition-reference" aria-hidden="true">
-          <img src="/references/nookii-home-clay-reference.png" alt="" />
+          <img src="/references/nookii-home-clay-reference.jpg" alt="" />
         </div>
       )}
     </main>
